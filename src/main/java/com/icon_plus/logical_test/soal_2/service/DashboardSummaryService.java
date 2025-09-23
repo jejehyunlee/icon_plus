@@ -6,6 +6,8 @@ import com.icon_plus.logical_test.soal_2.entity.ConsumptionType;
 import com.icon_plus.logical_test.soal_2.model.*;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -18,10 +20,13 @@ public class DashboardSummaryService {
 
     private final ApiService externalApiService;
 
+    private static final Logger logger = LoggerFactory.getLogger(DashboardSummaryService.class);
+
 
     public DashboardSumaryResponse getDashboardSummary() {
         try {
             // Fetch data from external APIs
+            logger.info("Processing fetching data from external APIs...");
             List<Booking> bookings = externalApiService.getAllBookings();
             List<ConsumptionType> consumptionTypes = externalApiService.getAllConsumptionTypes();
 
@@ -35,18 +40,23 @@ public class DashboardSummaryService {
             DashboardSumaryResponse response = new DashboardSumaryResponse();
 
             // Set period (current month)
+            logger.info("Processing setting period to current month...");
             response.setPeriod(getCurrentMonthPeriod());
 
             // Calculate statistics
+            logger.info("Processing Calculating statistics...");
             response.setStatistics(calculateStatistics(validBookings, consumptionTypes));
 
             // Calculate room utilizations
+            logger.info("Processing Calculating room utilizations...");
             response.setRoomUtilizations(calculateRoomUtilizations(validBookings, consumptionTypes));
 
             // Calculate consumption summary
+            logger.info("Processing Calculating consumption summary...");
             response.setConsumptionSummary(calculateConsumptionSummary(validBookings, consumptionTypes));
 
             // Calculate office activity
+            logger.info("Processing Calculating office activity...");
             response.setOfficeActivity(calculateOfficeActivity(validBookings));
 
             return response;
