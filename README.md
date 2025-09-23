@@ -5,7 +5,14 @@ Result
 
 ## API Response Example
 
-**Endpoint:** `GET (http://localhost:8080/api/booking/summary)`
+**Endpoint:** `GET http://localhost:8080/api/booking/summary?year=2025&month=12`
+
+### Mandatory :
+**Request Param** : year
+
+**Request Param** : month
+
+if Null LocalDateTime.Now
 
 **Response:**
 ```json
