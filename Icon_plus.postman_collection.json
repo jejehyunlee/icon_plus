@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "e8dac9af-0ca5-49ce-a21e-98dca3dc1c44",
+		"name": "Icon_plus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47940778"
+	},
+	"item": [
+		{
+			"name": "Transaksi-pemesanan-ruangan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://66876cc30bc7155dc017a662.mockapi.io/api/dummy-data/bookingList",
+					"protocol": "https",
+					"host": [
+						"66876cc30bc7155dc017a662",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"dummy-data",
+						"bookingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Master-jenis-konsumsi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://6686cb5583c983911b03a7f3.mockapi.io/api/dummy-data/masterJenisKonsumsi",
+					"protocol": "https",
+					"host": [
+						"6686cb5583c983911b03a7f3",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"dummy-data",
+						"masterJenisKonsumsi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSummary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/booking/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"booking",
+						"summary"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/booking/summary",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"booking",
+								"summary"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 22 Sep 2025 05:18:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"period\": \"January 2024\",\n    \"statistics\": {\n        \"totalBookings\": 21,\n        \"totalParticipants\": 601,\n        \"averageUtilization\": 70,\n        \"totalConsumptionCost\": 27320000\n    },\n    \"roomUtilizations\": [\n        {\n            \"roomName\": \"Ruang Ganesha\",\n            \"bookingCount\": 3,\n            \"utilizationRate\": 30,\n            \"totalConsumption\": 3240000\n        },\n        {\n            \"roomName\": \"Ruang Semeru\",\n            \"bookingCount\": 3,\n            \"utilizationRate\": 30,\n            \"totalConsumption\": 1760000\n        },\n        {\n            \"roomName\": \"Ruang Borobudur\",\n            \"bookingCount\": 3,\n            \"utilizationRate\": 30,\n            \"totalConsumption\": 5940000\n        },\n        {\n            \"roomName\": \"Ruang Mendhut\",\n            \"bookingCount\": 2,\n            \"utilizationRate\": 20,\n            \"totalConsumption\": 1650000\n        },\n        {\n            \"roomName\": \"Ruang Fatmawati\",\n            \"bookingCount\": 2,\n            \"utilizationRate\": 20,\n            \"totalConsumption\": 2350000\n        },\n        {\n            \"roomName\": \"Ruang Prambanan\",\n            \"bookingCount\": 2,\n            \"utilizationRate\": 20,\n            \"totalConsumption\": 4200000\n        },\n        {\n            \"roomName\": \"Ruang Sudirman\",\n            \"bookingCount\": 2,\n            \"utilizationRate\": 20,\n            \"totalConsumption\": 2070000\n        },\n        {\n            \"roomName\": \"Ruang Galunggung\",\n            \"bookingCount\": 1,\n            \"utilizationRate\": 10,\n            \"totalConsumption\": 1610000\n        },\n        {\n            \"roomName\": \"Ruang Arjuna\",\n            \"bookingCount\": 1,\n            \"utilizationRate\": 10,\n            \"totalConsumption\": 1750000\n        },\n        {\n            \"roomName\": \"Ruang Rinjani\",\n            \"bookingCount\": 1,\n            \"utilizationRate\": 10,\n            \"totalConsumption\": 1350000\n        },\n        {\n            \"roomName\": \"Ruang Bromo\",\n            \"bookingCount\": 1,\n            \"utilizationRate\": 10,\n            \"totalConsumption\": 1400000\n        }\n    ],\n    \"consumptionSummary\": {\n        \"snackPagi\": 0,\n        \"snacksiang\": 9380000,\n        \"makanSiang\": 11640000,\n        \"snackSore\": 6300000,\n        \"otherConsumptions\": 0\n    },\n    \"officeActivity\": {\n        \"mostActiveOffice\": \"UID JAYA\",\n        \"officeBookingCount\": 7,\n        \"mostUsedRoom\": \"Ruang Ganesha\",\n        \"roomUsageCount\": 3\n    }\n}"
+				}
+			]
+		}
+	]
+}
