@@ -5,7 +5,7 @@ soal no 2 :
 
 ## API Response Example
 
-**Endpoint:** `GET /api/users/123`
+**Endpoint:** `GET (http://localhost:8080/api/booking/summary)`
 
 **Response:**
 ```json
