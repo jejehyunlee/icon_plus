@@ -9,6 +9,8 @@ import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -23,7 +25,7 @@ public class DashboardSummaryService {
     private static final Logger logger = LoggerFactory.getLogger(DashboardSummaryService.class);
 
 
-    public DashboardSumaryResponse getDashboardSummary() {
+    public DashboardSumaryResponse getDashboardSummary(Integer year, Integer month) {
         try {
             // Fetch data from external APIs
             logger.info("Processing fetching data from external APIs...");
@@ -41,7 +43,7 @@ public class DashboardSummaryService {
 
             // Set period (current month)
             logger.info("Processing setting period to current month...");
-            response.setPeriod(getCurrentMonthPeriod());
+            response.setPeriod(getMonthPeriod(year, month));
 
             // Calculate statistics
             logger.info("Processing Calculating statistics...");
@@ -66,13 +68,22 @@ public class DashboardSummaryService {
         }
     }
 
-    private String getCurrentMonthPeriod() {
-//        LocalDate now = LocalDate.now();
-//        return now.format(DateTimeFormatter.ofPattern("MMMM yyyy"));
+    public String getMonthPeriod(Integer year, Integer month) {
+        LocalDate date;
 
-        LocalDate januari2024 = LocalDate.of(2024, 1, 1);
-        return januari2024.format(DateTimeFormatter.ofPattern("MMMM yyyy"));
+        if (year != null && month != null) {
+            try {
+                date = LocalDate.of(year, month, 1);
+            } catch (DateTimeException e) {
+                throw new IllegalArgumentException("Bulan atau tahun tidak valid");
+            }
+        } else {
+            date = LocalDate.now();
+        }
+
+        return date.format(DateTimeFormatter.ofPattern("MMMM yyyy"));
     }
+
 
     private SummaryStatistics calculateStatistics(List<Booking> bookings, List<ConsumptionType> consumptionTypes) {
         SummaryStatistics stats = new SummaryStatistics();
