@@ -10,9 +10,9 @@ in root project (Soal No. 1)
 **Endpoint:** `GET http://localhost:8080/api/booking/summary/new`
 
 ### Filter With Params :
-**Month**
+**Month** ex : 01
 
-**Years**
+**Years** ex : 2024
 
 **Response:**
 ```json
