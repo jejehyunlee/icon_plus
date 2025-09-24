@@ -52,24 +52,24 @@ public class UnitSummaryService {
             // Ambil data booking
             ResponseEntity<BookingListResponse[]> bookingResp =
                     restTemplate.getForEntity(bookingListUrl, BookingListResponse[].class);
-            
+
             if (bookingResp.getBody() == null) {
                 System.out.println("ERROR: Booking response is null");
                 return Collections.emptyList();
             }
-            
+
             List<BookingListResponse> bookings = Arrays.asList(bookingResp.getBody());
             System.out.println("Successfully parsed " + bookings.size() + " bookings");
 
             // Ambil data master konsumsi
             ResponseEntity<JenisKonsumsiResponse[]> konsumsiResp =
                     restTemplate.getForEntity(konsumsiUrl, JenisKonsumsiResponse[].class);
-                    
+
             if (konsumsiResp.getBody() == null) {
                 System.out.println("ERROR: Konsumsi response is null");
                 return Collections.emptyList();
             }
-            
+
             List<JenisKonsumsiResponse> masterKonsumsiList = Arrays.asList(konsumsiResp.getBody());
             System.out.println("Successfully parsed " + masterKonsumsiList.size() + " master konsumsi");
 
@@ -77,37 +77,52 @@ public class UnitSummaryService {
             // Grouping per unit
             Map<String, List<RoomSummaryResponse>> unitMap = new LinkedHashMap<>();
 
+            BigDecimal totalNominal = BigDecimal.ZERO; // total global semua booking
+
             for (BookingListResponse booking : bookings) {
-
                 String unitName = booking.getUnitName();
-
                 Integer participants = booking.getParticipants();
+                String roomName = booking.getRoomName();
 
-                String getName = booking.getRoomName();
-                BigDecimal totalNominal = BigDecimal.ZERO;
                 BigDecimal totalNominalPerUnit = BigDecimal.ZERO;
 
                 // Handle null participants
                 int participantCount = (participants != null) ? participants : 0;
-                
-                // Calculate both totals in single loop
+
+                // Hitung total per unit
                 for (JenisKonsumsiResponse konsumsi : masterKonsumsiList) {
-                    if (konsumsi.getName() != null && konsumsi.getMaxPrice() != null) {
-                        BigDecimal konsumsiTotal = BigDecimal.valueOf(participantCount).multiply(konsumsi.getMaxPrice());
+                    if (konsumsi != null
+                            && konsumsi.getName() != null
+                            && konsumsi.getMaxPrice() != null) {
+
+                        BigDecimal konsumsiTotal = BigDecimal.valueOf(participantCount)
+                                .multiply(konsumsi.getMaxPrice());
+
                         totalNominalPerUnit = totalNominalPerUnit.add(konsumsiTotal);
-                        totalNominal = totalNominal.add(konsumsiTotal);
                     }
                 }
 
-                // Calculate percentage with division by zero protection
+                // Tambahkan ke total global
+                totalNominal = totalNominal.add(totalNominalPerUnit);
+
+                // Hitung persentase (safe division)
                 BigDecimal percentageUse = BigDecimal.ZERO;
                 if (totalNominalPerUnit.compareTo(BigDecimal.ZERO) > 0) {
-                    percentageUse = totalNominal.divide(totalNominalPerUnit, 4, RoundingMode.HALF_UP).multiply(BigDecimal.valueOf(100));
+                    percentageUse = totalNominalPerUnit
+                            .divide(totalNominal, 4, RoundingMode.HALF_UP)
+                            .multiply(BigDecimal.valueOf(100));
                 }
 
-                RoomSummaryResponse roomSummary = new RoomSummaryResponse
+                System.out.printf("Unit: %s, Room: %s, Total per Unit: %s, Persentase: %s%%%n",
+                        unitName, roomName, totalNominalPerUnit, percentageUse);
+
+
+            System.out.println("Total keseluruhan: " + totalNominal);
+
+
+            RoomSummaryResponse roomSummary = new RoomSummaryResponse
                     (
-                        getName,
+                        unitName,
                         participants,
                         totalNominal,
                         percentageUse,
