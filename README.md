@@ -9,6 +9,11 @@ in root project (Soal No. 1)
 
 **Endpoint:** `GET http://localhost:8080/api/booking/summary/new`
 
+### Filter With Params :
+**Month**
+
+**Years**
+
 **Response:**
 ```json
 
@@ -17,7 +22,8 @@ in root project (Soal No. 1)
         "unitInduk": "UID JAYA",
         "rooms": [
             {
-                "roomName": "UID JAYA",
+                "bookingDate": "2024-01-03T07:25:52.737Z",
+                "roomName": "Ruang Borobudur",
                 "participants": 62,
                 "totalNominal": 4365792,
                 "precentageConsumption": 100.0000,
@@ -91,7 +97,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JAYA",
+                "bookingDate": "2024-01-03T08:25:52.737Z",
+                "roomName": "Ruang Prambanan",
                 "participants": 42,
                 "totalNominal": 7323264,
                 "precentageConsumption": 40.3800,
@@ -165,7 +172,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JAYA",
+                "bookingDate": "2024-01-03T08:25:52.737Z",
+                "roomName": "Ruang Mendhut",
                 "participants": 15,
                 "totalNominal": 8379504,
                 "precentageConsumption": 12.6100,
@@ -239,7 +247,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JAYA",
+                "bookingDate": "2024-01-03T08:25:52.737Z",
+                "roomName": "Ruang Mendhut",
                 "participants": 27,
                 "totalNominal": 10280736,
                 "precentageConsumption": 18.4900,
@@ -313,7 +322,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JAYA",
+                "bookingDate": "2024-01-08T08:25:52.737Z",
+                "roomName": "Ruang Prambanan",
                 "participants": 30,
                 "totalNominal": 16195680,
                 "precentageConsumption": 13.0400,
@@ -387,7 +397,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JAYA",
+                "bookingDate": "2024-01-05T09:25:52.737Z",
+                "roomName": "Ruang Borobudur",
                 "participants": 40,
                 "totalNominal": 21476880,
                 "precentageConsumption": 13.1100,
@@ -461,7 +472,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JAYA",
+                "bookingDate": "2024-01-15T09:25:52.737Z",
+                "roomName": "Ruang Borobudur",
                 "participants": 40,
                 "totalNominal": 24293520,
                 "precentageConsumption": 11.5900,
@@ -540,7 +552,8 @@ in root project (Soal No. 1)
         "unitInduk": "UID JABAR",
         "rooms": [
             {
-                "roomName": "UID JABAR",
+                "bookingDate": "2024-01-06T08:25:52.737Z",
+                "roomName": "Ruang Rinjani",
                 "participants": 27,
                 "totalNominal": 12181968,
                 "precentageConsumption": 15.6100,
@@ -614,7 +627,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JABAR",
+                "bookingDate": "2024-01-04T09:30:52.737Z",
+                "roomName": "Ruang Galunggung",
                 "participants": 23,
                 "totalNominal": 33025104,
                 "precentageConsumption": 4.9000,
@@ -688,7 +702,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JABAR",
+                "bookingDate": "2024-01-04T10:30:52.737Z",
+                "roomName": "Ruang Semeru",
                 "participants": 20,
                 "totalNominal": 34433424,
                 "precentageConsumption": 4.0900,
@@ -762,7 +777,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JABAR",
+                "bookingDate": "2024-01-04T10:30:52.737Z",
+                "roomName": "Ruang Semeru",
                 "participants": 18,
                 "totalNominal": 35700912,
                 "precentageConsumption": 3.5500,
@@ -836,7 +852,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JABAR",
+                "bookingDate": "2024-01-10T08:30:52.737Z",
+                "roomName": "Ruang Semeru",
                 "participants": 20,
                 "totalNominal": 37109232,
                 "precentageConsumption": 3.8000,
@@ -910,7 +927,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JABAR",
+                "bookingDate": "2024-01-15T08:30:52.737Z",
+                "roomName": "Ruang Bromo",
                 "participants": 20,
                 "totalNominal": 38517552,
                 "precentageConsumption": 3.6600,
@@ -989,7 +1007,8 @@ in root project (Soal No. 1)
         "unitInduk": "UID BALI",
         "rooms": [
             {
-                "roomName": "UID BALI",
+                "bookingDate": "2024-01-05T08:25:52.737Z",
+                "roomName": "Ruang Ganesha",
                 "participants": 27,
                 "totalNominal": 14083200,
                 "precentageConsumption": 13.5000,
@@ -1063,7 +1082,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID BALI",
+                "bookingDate": "2024-01-05T08:45:52.737Z",
+                "roomName": "Ruang Ganesha",
                 "participants": 27,
                 "totalNominal": 40418784,
                 "precentageConsumption": 4.7000,
@@ -1137,7 +1157,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID BALI",
+                "bookingDate": "2024-01-10T08:45:52.737Z",
+                "roomName": "Ruang Ganesha",
                 "participants": 27,
                 "totalNominal": 42320016,
                 "precentageConsumption": 4.4900,
@@ -1216,7 +1237,8 @@ in root project (Soal No. 1)
         "unitInduk": "UID JATENG & DIY",
         "rooms": [
             {
-                "roomName": "UID JATENG & DIY",
+                "bookingDate": "2024-01-01T08:00:52.737Z",
+                "roomName": "Ruang Arjuna",
                 "participants": 35,
                 "totalNominal": 18660240,
                 "precentageConsumption": 13.2100,
@@ -1295,7 +1317,8 @@ in root project (Soal No. 1)
         "unitInduk": "UID JATIM",
         "rooms": [
             {
-                "roomName": "UID JATIM",
+                "bookingDate": "2024-01-02T08:30:52.737Z",
+                "roomName": "Ruang Sudirman",
                 "participants": 23,
                 "totalNominal": 25913088,
                 "precentageConsumption": 6.2500,
@@ -1369,7 +1392,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JATIM",
+                "bookingDate": "2024-01-03T09:30:52.737Z",
+                "roomName": "Ruang Fatmawati",
                 "participants": 30,
                 "totalNominal": 28025568,
                 "precentageConsumption": 7.5400,
@@ -1443,7 +1467,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JATIM",
+                "bookingDate": "2024-01-11T09:30:52.737Z",
+                "roomName": "Ruang Fatmawati",
                 "participants": 25,
                 "totalNominal": 29785968,
                 "precentageConsumption": 5.9100,
@@ -1517,7 +1542,8 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "UID JATIM",
+                "bookingDate": "2024-01-15T09:30:52.737Z",
+                "roomName": "Ruang Sudirman",
                 "participants": 23,
                 "totalNominal": 31405536,
                 "precentageConsumption": 5.1600,
@@ -1596,7 +1622,8 @@ in root project (Soal No. 1)
         "unitInduk": "officeName 22",
         "rooms": [
             {
-                "roomName": "officeName 22",
+                "bookingDate": "2024-08-25T01:10:22.554Z",
+                "roomName": "roomName 22",
                 "participants": 94,
                 "totalNominal": 48939120,
                 "precentageConsumption": 13.5300,
@@ -1675,7 +1702,8 @@ in root project (Soal No. 1)
         "unitInduk": "officeName 23",
         "rooms": [
             {
-                "roomName": "officeName 23",
+                "bookingDate": "2025-01-19T05:30:24.117Z",
+                "roomName": "roomName 23",
                 "participants": 32,
                 "totalNominal": 51192432,
                 "precentageConsumption": 4.4000,
@@ -1754,7 +1782,8 @@ in root project (Soal No. 1)
         "unitInduk": "officeName 24",
         "rooms": [
             {
-                "roomName": "officeName 24",
+                "bookingDate": "2025-01-19T06:51:00.542Z",
+                "roomName": "roomName 24",
                 "participants": 6,
                 "totalNominal": 51614928,
                 "precentageConsumption": 0.8200,
@@ -1833,7 +1862,8 @@ in root project (Soal No. 1)
         "unitInduk": "officeName 25",
         "rooms": [
             {
-                "roomName": "officeName 25",
+                "bookingDate": "2025-01-19T12:37:26.591Z",
+                "roomName": "roomName 25",
                 "participants": 70,
                 "totalNominal": 56544048,
                 "precentageConsumption": 8.7200,
