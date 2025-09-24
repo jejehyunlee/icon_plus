@@ -1,15 +1,12 @@
 package com.icon_plus.logical_test.soal_2.controller;
 
-import com.icon_plus.logical_test.soal_2.model.DashboardSumaryResponse;
-import com.icon_plus.logical_test.soal_2.service.DashboardSummaryService;
+import com.icon_plus.logical_test.soal_2.model.UnitSummaryResponse;
+import com.icon_plus.logical_test.soal_2.service.UnitSummaryService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDate;
 import java.util.List;
 
     @RestController
@@ -17,15 +14,28 @@ import java.util.List;
     @RequestMapping("/api/booking")
     public class BookingSummaryController {
 
-            private final DashboardSummaryService dashboardSummaryService;
+//          private final DashboardSummaryService dashboardSummaryService;
 
-            @GetMapping("/summary")
-            public DashboardSumaryResponse getDashboardSummary(
-                    @RequestParam(required = false) Integer year,
-                    @RequestParam(required = false) Integer month
-                )
-                     {
+            private final UnitSummaryService unitSummaryService;
 
-                return dashboardSummaryService.getDashboardSummary(year, month);
+//            @GetMapping("/summary")
+//            public DashboardSumaryResponse getDashboardSummary(
+//                    @RequestParam(required = false) Integer year,
+//                    @RequestParam(required = false) Integer month
+//                )
+//
+//            {
+//                try {
+//                    return dashboardSummaryService.getDashboardSummary(year, month);
+//                } catch (Exception e) {
+//                    throw new RuntimeException("Failed to generate dashboard summary: " + e.getMessage());
+//                }
+//            }
+
+            @GetMapping("/summary/new")
+            public List<UnitSummaryResponse> getDashboardSummaryNew() {
+
+                return unitSummaryService.getUnitSummary();
             }
+
     }

@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "api.booking.url",
+      "type": "java.lang.String",
+      "description": "Description for api.booking.url."
+    },
+    {
+      "name": "api.consumption.url",
+      "type": "java.lang.String",
+      "description": "Description for api.consumption.url."
+    }
+  ] }
