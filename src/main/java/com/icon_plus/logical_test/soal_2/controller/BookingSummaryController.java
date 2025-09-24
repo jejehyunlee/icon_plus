@@ -32,7 +32,7 @@ import java.util.List;
 //                }
 //            }
 
-            @GetMapping("/summary")
+            @GetMapping("/summary/new")
             public List<UnitSummaryResponse> getDashboardSummaryNew() {
 
                 try {
