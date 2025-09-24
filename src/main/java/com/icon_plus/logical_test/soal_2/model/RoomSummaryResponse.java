@@ -13,6 +13,7 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RoomSummaryResponse {
+    private String bookingDate;
     private String roomName;
     private Integer participants;
     private BigDecimal totalNominal;

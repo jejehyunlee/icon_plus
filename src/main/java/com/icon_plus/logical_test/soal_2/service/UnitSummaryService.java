@@ -2,6 +2,7 @@ package com.icon_plus.logical_test.soal_2.service;
 
 import com.icon_plus.logical_test.soal_2.model.*;
 import lombok.RequiredArgsConstructor;
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -41,12 +42,14 @@ public class UnitSummaryService {
         }
     }
 
-    public List<UnitSummaryResponse> getUnitSummary() {
+    public List<UnitSummaryResponse> getUnitSummary(Integer month, Integer year) {
         System.out.println("=== DEBUGGING API CALLS ===");
         
         // Debug raw responses
         System.out.println(debugRawBookingData());
         System.out.println("\n" + debugRawConsumptionData());
+        
+        System.out.println("Filtering for month: " + month + ", year: " + year);
 
         try {
             // Ambil data booking
@@ -80,9 +83,23 @@ public class UnitSummaryService {
             BigDecimal totalNominal = BigDecimal.ZERO; // total global semua booking
 
             for (BookingListResponse booking : bookings) {
+                // Parse booking date
+                String[] dateParts = booking.getBookingDate().split("-");
+                if (dateParts.length < 3) continue; // Skip invalid dates
+                
+                int bookingYear = Integer.parseInt(dateParts[0]);
+                int bookingMonth = Integer.parseInt(dateParts[1]);
+                
+                // Apply month and year filter if provided
+                if ((month != null && bookingMonth != month) || 
+                    (year != null && bookingYear != year)) {
+                    continue;
+                }
                 String unitName = booking.getUnitName();
                 Integer participants = booking.getParticipants();
                 String roomName = booking.getRoomName();
+
+                String date = booking.getBookingDate();
 
                 BigDecimal totalNominalPerUnit = BigDecimal.ZERO;
 
@@ -122,7 +139,8 @@ public class UnitSummaryService {
 
             RoomSummaryResponse roomSummary = new RoomSummaryResponse
                     (
-                        unitName,
+                        date,
+                        roomName,
                         participants,
                         totalNominal,
                         percentageUse,
