@@ -32,10 +32,14 @@ import java.util.List;
 //                }
 //            }
 
-            @GetMapping("/summary/new")
+            @GetMapping("/summary")
             public List<UnitSummaryResponse> getDashboardSummaryNew() {
 
-                return unitSummaryService.getUnitSummary();
-            }
+                try {
+                    return unitSummaryService.getUnitSummary();
+                } catch (Exception e) {
+                    throw new RuntimeException("Failed to generate unit summary: " + e.getMessage(), e);
+                }
 
+            }
     }
