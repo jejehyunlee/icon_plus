@@ -17,7 +17,7 @@ in root project (Soal No. 1)
         "unitInduk": "UID JAYA",
         "rooms": [
             {
-                "roomName": "Ruang Borobudur",
+                "roomName": "UID JAYA",
                 "participants": 62,
                 "totalNominal": 4365792,
                 "precentageConsumption": 100.0000,
@@ -91,10 +91,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Prambanan",
+                "roomName": "UID JAYA",
                 "participants": 42,
-                "totalNominal": 2957472,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 7323264,
+                "precentageConsumption": 40.3800,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -165,10 +165,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Mendhut",
+                "roomName": "UID JAYA",
                 "participants": 15,
-                "totalNominal": 1056240,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 8379504,
+                "precentageConsumption": 12.6100,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -239,10 +239,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Mendhut",
+                "roomName": "UID JAYA",
                 "participants": 27,
-                "totalNominal": 1901232,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 10280736,
+                "precentageConsumption": 18.4900,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -313,10 +313,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Prambanan",
+                "roomName": "UID JAYA",
                 "participants": 30,
-                "totalNominal": 2112480,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 16195680,
+                "precentageConsumption": 13.0400,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -387,10 +387,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Borobudur",
+                "roomName": "UID JAYA",
                 "participants": 40,
-                "totalNominal": 2816640,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 21476880,
+                "precentageConsumption": 13.1100,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -461,10 +461,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Borobudur",
+                "roomName": "UID JAYA",
                 "participants": 40,
-                "totalNominal": 2816640,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 24293520,
+                "precentageConsumption": 11.5900,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -540,10 +540,10 @@ in root project (Soal No. 1)
         "unitInduk": "UID JABAR",
         "rooms": [
             {
-                "roomName": "Ruang Rinjani",
+                "roomName": "UID JABAR",
                 "participants": 27,
-                "totalNominal": 1901232,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 12181968,
+                "precentageConsumption": 15.6100,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -614,10 +614,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Galunggung",
+                "roomName": "UID JABAR",
                 "participants": 23,
-                "totalNominal": 1619568,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 33025104,
+                "precentageConsumption": 4.9000,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -688,10 +688,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Semeru",
+                "roomName": "UID JABAR",
                 "participants": 20,
-                "totalNominal": 1408320,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 34433424,
+                "precentageConsumption": 4.0900,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -762,10 +762,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Semeru",
+                "roomName": "UID JABAR",
                 "participants": 18,
-                "totalNominal": 1267488,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 35700912,
+                "precentageConsumption": 3.5500,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -836,10 +836,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Semeru",
+                "roomName": "UID JABAR",
                 "participants": 20,
-                "totalNominal": 1408320,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 37109232,
+                "precentageConsumption": 3.8000,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -910,10 +910,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Bromo",
+                "roomName": "UID JABAR",
                 "participants": 20,
-                "totalNominal": 1408320,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 38517552,
+                "precentageConsumption": 3.6600,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -989,10 +989,10 @@ in root project (Soal No. 1)
         "unitInduk": "UID BALI",
         "rooms": [
             {
-                "roomName": "Ruang Ganesha",
+                "roomName": "UID BALI",
                 "participants": 27,
-                "totalNominal": 1901232,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 14083200,
+                "precentageConsumption": 13.5000,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1063,10 +1063,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Ganesha",
+                "roomName": "UID BALI",
                 "participants": 27,
-                "totalNominal": 1901232,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 40418784,
+                "precentageConsumption": 4.7000,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1137,10 +1137,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Ganesha",
+                "roomName": "UID BALI",
                 "participants": 27,
-                "totalNominal": 1901232,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 42320016,
+                "precentageConsumption": 4.4900,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1216,10 +1216,10 @@ in root project (Soal No. 1)
         "unitInduk": "UID JATENG & DIY",
         "rooms": [
             {
-                "roomName": "Ruang Arjuna",
+                "roomName": "UID JATENG & DIY",
                 "participants": 35,
-                "totalNominal": 2464560,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 18660240,
+                "precentageConsumption": 13.2100,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1295,10 +1295,10 @@ in root project (Soal No. 1)
         "unitInduk": "UID JATIM",
         "rooms": [
             {
-                "roomName": "Ruang Sudirman",
+                "roomName": "UID JATIM",
                 "participants": 23,
-                "totalNominal": 1619568,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 25913088,
+                "precentageConsumption": 6.2500,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1369,10 +1369,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Fatmawati",
+                "roomName": "UID JATIM",
                 "participants": 30,
-                "totalNominal": 2112480,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 28025568,
+                "precentageConsumption": 7.5400,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1443,10 +1443,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Fatmawati",
+                "roomName": "UID JATIM",
                 "participants": 25,
-                "totalNominal": 1760400,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 29785968,
+                "precentageConsumption": 5.9100,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1517,10 +1517,10 @@ in root project (Soal No. 1)
                 ]
             },
             {
-                "roomName": "Ruang Sudirman",
+                "roomName": "UID JATIM",
                 "participants": 23,
-                "totalNominal": 1619568,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 31405536,
+                "precentageConsumption": 5.1600,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1596,10 +1596,10 @@ in root project (Soal No. 1)
         "unitInduk": "officeName 22",
         "rooms": [
             {
-                "roomName": "roomName 22",
+                "roomName": "officeName 22",
                 "participants": 94,
-                "totalNominal": 6619104,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 48939120,
+                "precentageConsumption": 13.5300,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1675,10 +1675,10 @@ in root project (Soal No. 1)
         "unitInduk": "officeName 23",
         "rooms": [
             {
-                "roomName": "roomName 23",
+                "roomName": "officeName 23",
                 "participants": 32,
-                "totalNominal": 2253312,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 51192432,
+                "precentageConsumption": 4.4000,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1754,10 +1754,10 @@ in root project (Soal No. 1)
         "unitInduk": "officeName 24",
         "rooms": [
             {
-                "roomName": "roomName 24",
+                "roomName": "officeName 24",
                 "participants": 6,
-                "totalNominal": 422496,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 51614928,
+                "precentageConsumption": 0.8200,
                 "consumptionSummary": [
                     {
                         "id": "1",
@@ -1833,10 +1833,10 @@ in root project (Soal No. 1)
         "unitInduk": "officeName 25",
         "rooms": [
             {
-                "roomName": "roomName 25",
+                "roomName": "officeName 25",
                 "participants": 70,
-                "totalNominal": 4929120,
-                "precentageConsumption": 100.0000,
+                "totalNominal": 56544048,
+                "precentageConsumption": 8.7200,
                 "consumptionSummary": [
                     {
                         "id": "1",
